@@ -75,6 +75,17 @@ h1 {
   padding: 5%;
   box-sizing: border-box;
 }
+.project-01, .project-02, .project-03{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 2px solid #333333;
+  padding: 3%;
+}
+#portfolio h4{
+  margin: 5% 0;
+  text-decoration: underline;
+}
 #portfolio img {
   width: 200px;
   height: auto;
