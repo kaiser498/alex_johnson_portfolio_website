@@ -1,149 +1,201 @@
 * {
-  margin: 0;
   padding: 0;
-  line-height: 2em;
+  margin: 0;
+}
+body {
+  font-family: "Open Sans", "Sans-serif";
   color: #333333;
 }
 nav {
   background-color: #2e86ab;
+  font-family: Poppins, sans-serif;
+  font-size: smaller;
 }
 nav ul {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
+  padding: 0.5em;
+  box-sizing: border-box;
+  gap: 1em;
+  width: 80%;
+  margin: 0 auto;
 }
 nav ul li {
-  list-style: none;
-  border: 2px solid #333333;
-  padding: 0.5%;
-  margin-left: 3%;
+  list-style-type: none;
   background-color: #f6f5ae;
-  border-radius: 10px;
-}
-nav ul li:last-child {
-  margin-right: 5%;
+  padding: 0.1em 0.5em;
+  border: 0.1em solid black;
+  border-radius: 0.5em;
 }
 nav ul li a {
-  color: #333333;
   text-decoration: none;
+  color: black;
 }
-nav ul li a:hover {
-  text-decoration: underline;
-}
-#home {
+.hero {
   display: flex;
   width: 80%;
-  height: auto;
-  margin: 10% auto;
+  margin: 2em auto;
   background-color: #f6f5ae;
-  padding: 5%;
+  padding: 3em 1em;
+  justify-content: space-between;
   box-sizing: border-box;
 }
-#home h3 {
-  color: black;
-  text-decoration: none;
-}
-.text,
-.photo {
-  flex: 1;
-}
-.text {
+.heroText {
   display: flex;
   flex-direction: column;
-  margin: 5% 0 0 0;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 3em;
 }
 h1 {
   color: #2e86ab;
+  font-family: Poppins, sans-serif;
+  font-weight: bold;
+  margin-bottom: 1em;
+  letter-spacing: 0.1em;
+  font-size: 1.5em;
 }
-.text a {
-  margin: 20% auto;
-  padding: 5px 10px;
-  border: 2px solid #333333;
+.heroText p {
+  font-weight: 600;
+  font-size: 1.2em;
+  letter-spacing: 0.1em;
+  margin-bottom: 2em;
+}
+.heroText a {
+  font-weight: 700;
+  padding: 0.1em 0.5em;
+  color: black;
+  border-radius: 0.5em;
+  align-self: center;
+}
+.heroText a:hover {
+  background-color: #2e86ab;
+  color: white;
   text-decoration: none;
-  color: #333333;
-  border-radius: 10px;
 }
-.text a:hover {
-  text-decoration: underline;
+.heroPhoto img {
+  margin-right: 3em;
 }
 #portfolio {
-  display: flex;
   width: 80%;
-  height: auto;
-  margin: 10% auto;
-  flex-direction: column;
+  margin: 5em auto;
+  display: flex;
+  flex-wrap: wrap;
   background-color: #f6f5ae;
-  padding: 5%;
+  padding: 3em;
   box-sizing: border-box;
 }
-.project-01, .project-02, .project-03{
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  border: 2px solid #333333;
-  padding: 3%;
-}
-#portfolio h4{
-  margin: 5% 0;
-  text-decoration: underline;
-}
-#portfolio img {
-  width: 200px;
-  height: auto;
-}
-h3 {
+#portfolio h2 {
+  flex-basis: 100%;
+  margin: 1em auto;
   text-align: center;
-  color: #2e86ab;
   text-decoration: underline;
+  color: #2e86ab;
+  font-family: Poppins, sans-serif;
+  font-weight: bold;
+  margin-bottom: 1em;
+  letter-spacing: 0.1em;
+  font-size: 1.5em;
 }
-#about-me,
+#portfolio div {
+  flex-basis: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 3em;
+}
+#portfolio div h3 {
+  margin: 1em;
+  text-decoration: underline;
+  font-weight: bold;
+  margin-bottom: 1em;
+  flex-basis: 100%;
+}
+#portfolio div img {
+  width: 25%;
+  margin: 5% 10%;
+}
+#portfolio div p {
+  align-self: center;
+  font-size: 2em;
+  flex: 1;
+  letter-spacing: 0.1em;
+}
+#aboutMe {
+  width: 80%;
+  margin: 0 auto 3em auto;
+  background-color: #f6f5ae;
+  box-sizing: border-box;
+  padding: 3em;
+  font-size: 1.5em;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+#aboutMe h2 {
+  flex: 1 1 100%;
+  text-align: center;
+  text-decoration: underline;
+  color: #2e86ab;
+  font-family: Poppins, sans-serif;
+  font-weight: bold;
+  margin-bottom: 1em;
+  letter-spacing: 0.1em;
+  font-size: 1.2em;
+}
+.first p {
+  margin: 2em 0;
+}
 #contact {
   width: 80%;
-  margin: 10% auto;
+  margin: 0 auto 3em auto;
   background-color: #f6f5ae;
-  padding: 5%;
+  padding: 3em;
   box-sizing: border-box;
 }
-#about-me h3 {
-  margin-bottom: 3%;
+#contact h2 {
+  text-align: center;
+  text-decoration: underline;
+  color: #2e86ab;
+  font-family: Poppins, sans-serif;
+  font-weight: bold;
+  margin-bottom: 1em;
+  letter-spacing: 0.1em;
+  font-size: 1.2em;
 }
-#about-me .no {
-  text-align: left;
-  margin: 3% 0;
-}
-
 input,
 button {
   display: inline-block;
   margin: 3%;
   padding: 1%;
 }
-.subheading{
-    display: flex;
-    flex-direction: row;
+.subheading {
+  display: flex;
+  flex-direction: row;
 }
-.form, .social{
-    flex: 1;
+.form,
+.social {
+  flex: 1;
 }
 .social p {
-    text-align: center;
-    text-decoration: underline;
-    color: #2e86ab;
+  text-align: center;
+  text-decoration: underline;
+  color: #2e86ab;
 }
 
-.social{
-    align-self: center;
+.social {
+  align-self: center;
 }
-.social .social-1{
-    display: flex;
-    justify-content: center;
+.social .social-1 {
+  display: flex;
+  justify-content: center;
 }
-.social .social-1 div{
-    margin: 5%;
+.social .social-1 div {
+  margin: 5%;
 }
-.footer{
-    background-color: #2e86ab;
-    padding: 0.5%;
-    text-align: center;
-    color: #333333;
-    margin-top: -5%;
+footer {
+  background-color: #2e86ab;
+  padding: 2em;
+  text-align: center;
+  color: #333333;
 }
